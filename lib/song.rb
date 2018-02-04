@@ -19,7 +19,7 @@ class Song
     @@count
   end
 
-  def genres(genre)
+  def self.genres()
     genre.each do |genre|
       genre.uniq! { |s| s.first }
     end
