@@ -17,4 +17,5 @@ class Song
   def genres(genre)
     genre.each do |genre|
       genre.uniq! { |s| s.first }
+    end
 end
