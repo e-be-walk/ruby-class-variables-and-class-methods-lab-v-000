@@ -29,4 +29,16 @@ class Song
     unique_genres
   end
 
+  def self.genre_count()
+    genre_hash = {}
+    @@genres.each do |g|
+      if genre_hash.include?(g)
+        genre_hash[g] += 1
+      else
+        genre_hash[g] = 1
+      end
+    end
+    genre_hash
+  end
+
 end
