@@ -23,7 +23,7 @@ class Song
     unique_genres = []
     @@genres.each do |genre|
       if !unique_genres.include?(genre)
-        unique_genres << genre 
+        unique_genres << genre
       end
     end
     unique_genres
